@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@200;300;400;500;600&family=Nunito:wght@300;500;600;700;800&family=Pacifico&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    min-width: 280px;
+}
+
+h1, h2, h3, h4, h5, h6{
+    font-family: Nunito, Arial;
+}
+
+p {
+    font-family: Heebo, Arial;
+    font-size: 20px;
+}
+
+.pacificoTitle{
+    font-size: 25px;
+    font-family: Pacifico;
+    color: #fea116;
+}
+
+.heeboTitle{
+    font-size: 30px;
+}
+
+.fas{
+    color: #fea116;
+    /* font-size: 50px; */
+}
+
+/* NAVBAR */
+
+nav {
+    background: #19191a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 115px;
+    padding: 0 30px;
+    width: calc(100% - 60px);
+    position: fixed;
+    top: 0;
+    z-index: 10;    
+}
+
+nav div{
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+    color: #fea116;
+    font-weight: 600;
+    font-size: 40px;
+}
+
+nav div .fas{
+    font-size: 50px;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.25rem;
+    font-family: Heebo;
+    font-weight: 200;
+    font-size: 1.25rem;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+}
+
+nav .fa-bars{
+    display: none;
+}
+
+#openList{
+    display: none;
+}
+
+/* FOOTER */
+
+footer{
+    background: #0f172b;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 80px;
+}
+
+.footerCard{
+    min-width: 220px;
+    width: 390px;
+}
+
+.footerCardRows{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+    font-family: Heebo;
+}
+
+footer a{
+    color: white;
+}
+
+footer .fas{
+    color: white;
+}
+
+footer .network {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    font-size: 40px;
+}
+
+@media all and (max-width: 767px){
+
+    body{
+        margin-top: 80px;
+    }
+
+    p{
+        font-size: 15px;
+    }
+
+    .pacificoTitle{
+        font-size: 20px;
+    }
+
+    nav{
+        height: 80px ;
+        padding: 0 15px 0 15px;
+        width: calc(100% - 30px);
+    }
+
+    nav div{
+        font-size: 18px;
+    }
+
+    nav div .fa-utensils{
+        font-size: 20px;
+    }
+
+    nav .fa-bars{
+        display: block;
+        font-size: 35px;
+    }
+
+    nav ul{
+        position: fixed;
+        top: 80px;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: calc(100% - 80px);
+        width: 100%;
+        z-index: 100;    
+        background-color: #130e06;
+        /* Menu desplegable */
+        clip-path: circle(0% at top left);
+        transition: clip-path .4s;
+        /* Tamaño de los Links */
+        font-size: 35px;
+        font-weight: 600;
+    }
+
+    nav ul:target{
+        clip-path: circle(150% at top left);
+    }
+
+    /* FOOTER MOBILE */
+
+    footer{
+        flex-wrap: wrap;
+        gap: 5px;
+        padding: 10px 20px;
+        justify-content: flex-start;
+    }
+    
+    .footerCardRows{
+        gap: 5px;
+        font-size: 15px;
+    }
+    
+    footer .network {
+        font-size: 30px;
+    }
+
+}
+
+/* MEDIUM */
+
+@media all and (min-width: 768px) and (max-width: 991px){
+
+    body{
+        margin-top: 115px;
+    }
+
+    /* NAVBAR MEDIUM */
+    nav {
+        padding: 0 25px;
+        width: calc(100% - 50px);
+    }
+    
+    nav div{
+        font-size: 26px;
+        padding-bottom: 7px;
+    }
+    
+    nav div .fas{
+        font-size: 32px;
+    }
+    
+    nav ul{
+        font-size: 18px;
+    }
+
+    /* FOOTER MEDIUM*/
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .footerCard{
+        min-width: 220px;
+        width: 45%;
+    }
+}
+
+
+

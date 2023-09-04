@@ -1,0 +1,745 @@
+.beforeContact{
+    display: flex;
+    flex-direction: column;
+    padding: 3%;
+    gap: 40px;
+    background: #f1f8ff;
+}
+
+/* BANNER */
+
+.banner {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    overflow: hidden;
+    background-color: #19191a;
+    mix-blend-mode: color-burn;
+}
+
+.banner img{
+    width: 1900px;
+    filter: brightness(25%);
+    z-index: 1;
+}
+
+.bannerArticle{
+    width: 65%;
+    position: absolute;
+    display: flex;
+    text-align: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    z-index: 2;
+    color: white;
+    
+}
+
+.bannerArticle h1{
+    font-size: 80px;
+    font-weight: 700;
+}
+
+/* CARDS TOP */
+
+.cardsContainer{
+    display: flex;
+    /* justify-content: space-between; */
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 125px;
+}
+
+.cardsContainer article{
+    min-width: 300px;
+    width: 370px;
+    height: 530px;
+    padding: 30px 20px;
+    border-radius: 15px;
+    background: white;
+}
+
+.cardsContainer .fas{
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.cardsContainer h2{
+    margin-bottom: 35px;
+}
+
+.cardsContainer p{
+    font-weight: 300;
+}
+
+/* ABOUT IMAGES*/
+
+.aboutUs {
+    display: flex;
+    padding-top: 125px;
+}
+
+.aboutUs .imgContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    width: 55%;
+}
+
+.aboutUs .div-img{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.aboutUs img{
+    width: 320px;
+    height: 320px;
+    margin: 10px 30px 0 0;
+}
+
+.aboutUs #aboutImg2, #aboutImg3{
+    width: 240px;
+    height: 240px;
+}
+
+#aboutImg2 {
+    margin-top: 90px;
+}
+
+#aboutImg3 {
+    margin-left: 80px;
+}
+
+/* ABOUT ARTICLE */
+
+.aboutUs article{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 45%;
+    min-width: 30%;
+}
+
+/* MENU */
+
+.MenuContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding-top: 125px;
+}
+
+/* PRODUCTS LIST */
+
+.product-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+    margin-top: 60px;
+}
+
+/* PRODUCT */
+
+.product {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.product img {
+    width: 140px;
+}
+
+.product .top-row{
+    display: flex;
+    width: 550px;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.product .product-title{
+    font-family: Nunito;
+    font-weight: 800;
+}
+
+.product .price{
+    align-items: center;
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 20px;
+    color: #fea116;
+}
+
+/* CONTACT */
+
+.contact{
+    display: flex;
+    color: white;
+    padding-top: 115px;
+}
+
+.contact img{
+    width: 50%;
+}
+
+.formContactDiv {
+    display: flex;
+    flex: 3;
+    flex-direction: column;
+    gap: 20px;
+    width: 50%;
+    background: #0f172b;
+    padding: 30px 50px;
+}
+
+.contact h3{
+    font-size: 25px;
+    color: #fea116;
+}
+
+.contact h2 {
+    font-size: 30px;
+}
+
+/* FORM CONTACt*/
+
+.formContact{
+    font-size: 20px;
+    font-family: Heebo;
+    font-weight: 300;
+}
+
+.nameAndEmail {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.nameAndEmail div {
+    width: 50%;
+}
+
+.formContact input, textarea, button {
+    border-radius: 5px;
+    padding: 0 5px;
+    font-size: 20px;
+}
+
+.formContact input{
+    width: calc(100% - 15px);
+    height: 50px;
+}
+
+.formContact textarea{
+    padding: 15px 15px;
+    width: calc(100% - 35px);
+    height: 200px;
+    font-family: Heebo;
+}
+
+.formContact button{
+    width: 100%;
+    height: 50px;
+    font-family: Heebo;
+    font-size: 20px;
+    background: #fea116;;
+    color: white;
+}
+
+/* TEAM */
+
+.ourTeam{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    background: #f1f8ff;
+    padding: 50px 80px;
+}
+
+.teamCards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.cheffCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    min-width: 220px;
+    width: 280px;
+    height: 290px;
+    padding: 55px;
+    border-radius: 15px;
+    background: white;
+}
+
+.cheffCard img {
+    border-radius: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+.cheffCard p{
+    font-family: Nunito;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+/* SMALL */
+
+@media all and (max-width: 767px){
+
+    /* BANNER MOBILE */
+    .banner{
+        /* min-height: 400px; */
+        max-height: 550px;
+    }
+
+    .banner img{
+        height: 100%;
+    }
+
+    .bannerArticle{
+        width: 90%;
+        gap: 10px;
+    }
+
+    .bannerArticle h1{
+        font-size: 30px;
+    }
+
+    .bannerArticle p{
+        font-size: 18px;
+    }
+
+    /* BEFORE CONTACT */
+    .beforeContact{
+        padding: 20px;
+        gap: 0;
+    }
+
+    .aboutUs, .MenuContainer{
+        padding-top: 90px;
+    }
+
+    /* CARDS TOP MOBILE */
+    .cardsContainer{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    
+    .cardsContainer article{
+        height: auto;
+        min-width: 200px;
+    }
+    
+    .cardsContainer .fas{
+        font-size: 40px;
+        margin-bottom: 5px;
+    }
+    
+    .cardsContainer h2{
+        margin-bottom: 5px;
+    }
+    
+    .cardsContainer p{
+        font-size: 18px;
+    }
+
+    /* ABOUT US MOBILE */
+
+    /* ABOUT IMAGES*/
+
+    .aboutUs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .aboutUs .imgContainer{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .aboutUs .div-img{
+        display: flex;
+        overflow: auto;
+        flex-wrap: nowrap;
+        gap: 10px;
+        width: 100%;
+        scroll-snap-type: x mandatory;
+    }
+
+    .aboutUs img{
+        width: 92%;
+        aspect-ratio: 2/2;
+        height: auto;
+        margin: 0;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+
+    .aboutUs #aboutImg2 {
+        width: 92%;
+        aspect-ratio: 2/2;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .aboutUs #aboutImg3 {
+        width: 92%;
+        aspect-ratio: 2/2;
+        height: auto;
+        margin-left: 0;
+    }
+
+    /* ABOUT ARTICLE */
+
+    .aboutUs article{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .aboutUs p{
+        font-size: 18px;
+    }
+
+    /* MENU LIST */
+
+    /* MENU */
+    .MenuContainer{
+        flex-wrap: wrap;
+    }
+
+    .product-list{
+        margin-top: 15px;
+        justify-content: center;
+    }
+
+    /* PRODUCT */
+
+    .product {
+        gap: 15px;
+    }
+
+    .product img {
+        width: 80px;
+    }
+
+    .product .top-row{
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    /* CONTACT */
+
+    .contact{
+        flex-wrap: wrap;
+        padding-top: 80px;
+        background: #f1f8ff;
+    }
+
+    .contact img{
+        width: 100%;
+    }
+
+    .formContactDiv {
+        padding: 15px;
+    }
+
+    /* FORM CONTACt*/
+
+    .nameAndEmail {
+        flex-wrap: wrap;
+    }
+
+    .nameAndEmail div {
+        width: 100%;
+    }
+
+
+    /* TEAM */
+
+    .ourTeam{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        background: #f1f8ff;
+
+        padding: 80px 15px 15px;
+        /* overflow: hidden; */
+        width: calc(100% -30px);
+    }
+
+    .teamCardsContainer{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .teamCards{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: calc(100% -30px);
+        justify-content: flex-start;
+        display: flex;
+        overflow: auto;
+        flex-wrap: nowrap;
+        scroll-snap-type: x mandatory;
+        
+    }
+
+    .cheffCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        height: auto;
+        padding: 20px;
+        scroll-snap-align: start;
+    }
+
+    .cheffCard img {
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .cheffCard p{
+        font-family: Nunito;
+        font-weight: 700;
+        font-size: 25px;
+    }
+}
+
+
+@media all and (min-width: 768px) and (max-width: 991px){
+
+    
+
+    /* BANNER MEDIUM */
+    .banner {
+        height: calc(auto + 60px);
+    }
+    
+    .banner img{
+        height: 100%;
+    }
+    
+    .bannerArticle{
+        width: 90%;  
+    }
+
+
+    /* BEFORE CONTACT MEDIUM */
+    .beforeContact{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        gap: 40px;
+        background: #f1f8ff;
+    }
+
+    /* CARDS TOP MEDIUM*/
+
+    .cardsContainer{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 125px;
+    }
+
+    .cardsContainer article{
+        width: calc(50% - 50px);
+        height: auto;
+    }
+
+    /* ABOUT US MEDIUM */
+
+    .aboutUs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-top: 125px;
+    }
+
+    .aboutUs .imgContainer{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .aboutUs .div-img{
+        display: flex;
+        overflow: auto;
+        flex-wrap: nowrap;
+        gap: 10px;
+        width: 100%;
+        scroll-snap-type: x mandatory;
+    }
+
+    .aboutUs img{
+        width: 60%;
+        aspect-ratio: 1/1;
+        height: auto;
+        margin: 0;
+        flex-shrink: 0;
+        scroll-snap-align: start;
+    }
+
+    .aboutUs #aboutImg2 {
+        width: 60%;
+        aspect-ratio: 1/1;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .aboutUs #aboutImg3 {
+        width: 60%;
+        aspect-ratio: 1/1;
+        height: auto;
+        margin-left: 0;
+    }
+
+    /* ABOUT ARTICLE */
+
+    .aboutUs article{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        width: 100%;
+    }
+
+    .aboutUs p{
+        font-size: 18px;
+    }
+
+    /* PRODUCTS LIST MEDIUM*/
+
+    .MenuContainer{
+        padding-top: 125px;
+    }
+
+    .product-list{
+        justify-content: center;
+        display: flex;
+    }
+
+    /* CONTACT MEDIUM*/
+
+    .contact{
+        flex-wrap: wrap;
+        padding-top: 115px;
+        background: #f1f8ff;
+    }
+
+    .contact img{
+        width: 100%;
+    }
+
+    .formContactDiv {
+        padding: 15px;
+    }
+
+    /* FORM CONTACT MEDIUM*/
+
+    .nameAndEmail {
+        flex-wrap: wrap;
+    }
+
+    .nameAndEmail div {
+        width: 100%;
+    }
+
+    /* TEAM MEDIUM*/
+
+    .ourTeam{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        background: #f1f8ff;
+
+        padding: 115px 15px 15px;
+        /* overflow: hidden; */
+        width: calc(100% -30px);
+    }
+
+    .teamCardsContainer{
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .teamCards{
+        display: flex;
+        flex-direction: row;
+        gap: 20px;
+        width: calc(100% -30px);
+
+        justify-content: flex-start;
+        display: flex;
+        overflow: auto;
+        flex-wrap: nowrap;
+        scroll-snap-type: x mandatory;
+        
+    }
+
+    .cheffCard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+
+        height: auto;
+        padding: 20px;
+        scroll-snap-align: start;
+    }
+
+    .cheffCard img {
+        border-radius: 100%;
+        width: 200px;
+        height: 200px;
+    }
+
+    .cheffCard p{
+        font-family: Nunito;
+        font-weight: 700;
+        font-size: 25px;
+    }
+    
+}
+
+@media all and (min-width: 992px) and (max-width: 1425px){
+    .aboutUs{
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 115px;
+    }
+
+    .aboutUs article{
+        width: 100%;
+    }
+ 
+    .aboutUs .imgContainer{
+        width: 710px;
+    }
+}
